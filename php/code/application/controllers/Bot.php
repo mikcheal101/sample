@@ -20,5 +20,17 @@ class Bot extends CI_Controller {
 	public function install_file() {
 
 	}
+
+	# 	@route 	response/authentication
+	public function login() {}
+
+	# 	@route 	response/bot-details
+	public function bot_details() {}
+
+	# 	@route 	response/command-response
+	public function command_response() {}
+
+	# 	@route 	response/command
+	public function get_command() {}
 }
 ?>

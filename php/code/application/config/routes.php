@@ -63,5 +63,13 @@ $route['bots/get-all']					= "bot/get_all";
 $route['bots/get-logs/(:any)']			= "bot/get_logs/$1";
 $route['bots/install-file']				= "bot/install_file";
 
+
+# bot routes
+$route['response/authentication/']		= "bot/login";
+$route['response/bot-details']			= "bot/bot_details";
+$route['response/command-response']		= "bot/command_response";
+$route['request/command']				= "get_command";
+		
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

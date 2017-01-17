@@ -13,3 +13,10 @@ priviledged pages
 	/bots/get-all
 	/bot/get-logs/:id
 	/bot/install-file
+
+bot routes
+	/response/authentication/		=> post
+	/response/bot-details			=> post
+	/response/command-response 		=> post
+
+	/request/command 				=> get
