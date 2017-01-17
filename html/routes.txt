@@ -1,0 +1,15 @@
+public routes
+
+	/auth/sign-in
+	/auth/sign-out
+
+
+private routes:
+
+	/auth/processing/sign-in
+	/auth/processing/sign-out
+
+priviledged pages
+	/bots/get-all
+	/bot/get-logs/:id
+	/bot/install-file
