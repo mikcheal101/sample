@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bot Version 1.0.0</title>
+	<style type="text/css">
+		html, body {
+			font-family: arial;
+			font-size:12px;
+			padding: 0px 50px!important;
+		}
+
+		div.login {
+			width: 50%!important;
+			margin: 10px 25%!important;
+		}
+
+		div.login fieldset {
+			border: 1px solid #dedede!important;
+			padding: 20px!important;
+			border-radius: 5px!important;
+		}
+
+		div.login fieldset legend {
+			padding: 10px!important;
+		}
+
+		div.input input {
+			padding: 5px!important;
+			border: 1px solid #ddd!important;
+			width: 70%!important;
+			margin: 5px!important;
+		}
+
+		div.input label {
+			margin-right: 10%!important;
+		}
+
+		span.btn {
+			border: 1px solid #20d620!important;
+			padding: 5px 25px!important;
+			color: #0c500c;
+			border-radius: 3px!important;
+		}
+
+		div.buttons {
+			margin-top: 15px!important;
+			float: right!important;
+			margin-right: 40px!important;
+		}
+
+		div.panel {
+			border: 1px solid #dedede;
+			padding: 5px!important;
+			border-radius:3px;
+			-moz-border-radius:3px;
+			height: 550px!important;
+		}
+
+		div.left {
+			float: left;
+			width: 27%;
+			height: inherit;
+		}
+
+		div.right {
+			float: right;
+			width: 70%!important;
+			height: inherit;
+		}
+
+		.circle {
+			float: left;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			-moz-border-radius: 50%;
+			border:1px solid #dedede;
+			margin: 10px 30px;
+		}
+
+		ul.list {
+			list-style: none;
+			padding-left: 0px;
+		}
+
+		.no-margin {
+			margin: 0;
+		}
+
+		h4 {
+			font-size:13px; 
+		}
+		.tr {
+			height: 50px;
+		}
+		.active {
+			background-color:#20d620;
+		}
+		div.users {
+			border-bottom: 1px solid rgba(222, 222, 222, 0.36);
+			padding: 10px;
+			height: 60px;
+		}
+
+		span.left {
+			float: left;
+		}
+
+		span.right {
+			float:right;
+		}
+
+		.detailsTable tr th {
+			padding: 10px;
+			width: 50%;
+			text-align: right;
+		}
+		.detailsTable tr td {
+			text-align: left;
+			padding-left: 10px;
+		}
+		.right.panel > p {
+			font-size: 18px;
+			text-align: center;
+		}
+		.hr {
+			height: 1px;
+			background-color:rgba(222, 222, 222, 0.31);
+			margin: 20px;
+		}
+
+		.action-btns {
+			margin: 0 20px;
+			text-align: center;
+		}
+
+		.header ul {
+			list-style: none;
+			padding: 0px;
+			display: flex;
+		}
+
+		.header ul li {
+			padding-right: 20px;
+		}
+
+		.header ul li span {
+			color:#5050ab!important;
+		}
+
+		.active-bot {
+			color: #3ca040!important;
+		}
+		.offline-bot {
+			color:#a03c3c!important;
+		}
+		#searchBar {
+			border-radius: 5px;
+			-moz-border-radius:5px;
+			margin-top: 10px;
+			width: 95%;
+			padding: 5px;
+			border:1px solid #dfdfdf;
+		}
+	</style>
+</head>
+<body>
+	<div class="app">
+		<div class="header">
+			<ul>
+				<li>
+					<span>logout</span>
+				</li>
+				<li>
+					<span>change password</span>
+				</li>
+			</ul>
+		</div>
+		<div class="left panel">
+			<div class="users">
+				<span class="left">
+					<input type="checkbox" name="online" placeholder="" />
+					<label>Online Bots <b>21</b></label>
+				</span>
+
+				<span class="right">
+					<input type="checkbox" name="online" placeholder="" />
+					<label>Offline Bots <b>21</b></label>
+				</span>
+
+				<div>
+					<input type="text" name="search" id="searchBar" placeholder="enter botname or ip to search for bot">
+				</div>
+			</div>
+			<table cellspacing="0" cellpadding="0" width="100%">
+				<tr class="tr">
+					<td width="30px">
+						<span class="circle"></span>
+					</td>
+					<td>
+						<h4 class="no-margin">Uncle Samba</h4>
+						<small>127.0.0.1</small>
+					</td>
+				</tr>
+				<tr class="tr">
+					<td>
+						<span class="circle"></span>
+					</td>
+					<td>
+						<h4 class="no-margin">Uncle Samba</h4>
+						<small>127.0.0.1</small>
+					</td>
+				</tr>
+				<tr class="tr">
+					<td>
+						<span class="circle"></span>
+					</td>
+					<td>
+						<h4 class="no-margin">Uncle Samba</h4>
+						<small>127.0.0.1</small>
+					</td>
+				</tr>
+				<tr class="tr">
+					<td width="30px">
+						<span class="circle"></span>
+					</td>
+					<td>
+						<h4 class="no-margin">Uncle Samba</h4>
+						<small>127.0.0.1</small>
+					</td>
+				</tr>
+				<tr class="tr">
+					<td>
+						<span class="circle"></span>
+					</td>
+					<td>
+						<h4 class="no-margin">Uncle Samba</h4>
+						<small>127.0.0.1</small>
+					</td>
+				</tr>
+				<tr class="tr">
+					<td>
+						<span class="circle"></span>
+					</td>
+					<td>
+						<h4 class="no-margin">Uncle Samba</h4>
+						<small>127.0.0.1</small>
+					</td>
+				</tr>
+				<tr class="tr">
+					<td width="30px">
+						<span class="circle"></span>
+					</td>
+					<td>
+						<h4 class="no-margin">Uncle Samba</h4>
+						<small>127.0.0.1</small>
+					</td>
+				</tr>
+				<tr class="tr">
+					<td>
+						<span class="circle"></span>
+					</td>
+					<td>
+						<h4 class="no-margin">Uncle Samba</h4>
+						<small>127.0.0.1</small>
+					</td>
+				</tr>
+				<tr class="tr">
+					<td>
+						<span class="circle"></span>
+					</td>
+					<td>
+						<h4 class="no-margin">Uncle Samba</h4>
+						<small>127.0.0.1</small>
+					</td>
+				</tr>
+				<tr class="tr">
+					<td width="30px">
+						<span class="circle"></span>
+					</td>
+					<td>
+						<h4 class="no-margin">Uncle Samba</h4>
+						<small>127.0.0.1</small>
+					</td>
+				</tr>
+				<tr class="tr">
+					<td>
+						<span class="circle"></span>
+					</td>
+					<td>
+						<h4 class="no-margin">Uncle Samba</h4>
+						<small>127.0.0.1</small>
+					</td>
+				</tr>
+				<tr class="tr">
+					<td>
+						<span class="circle"></span>
+					</td>
+					<td>
+						<h4 class="no-margin">Uncle Samba</h4>
+						<small>127.0.0.1</small>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="right panel">
+			<p>Bot Details</p>
+			<table cellpadding="0" cellspacing="0" width="100%" class="detailsTable">
+				<tr>
+					<th>
+						Operating System:
+					</th>
+					<td>
+						Windows Operating System
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Version:
+					</th>
+					<td>
+						Windows 10
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Ip Address:
+					</th>
+					<td>
+						127.0.0.1
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Country:	
+					</th>
+					<td>
+						Nigeria
+					</td>
+				</tr>
+				<tr>
+					<th>
+						City:	
+					</th>
+					<td>
+						Abuja
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Region:	
+					</th>
+					<td>
+						FCT
+					</td>
+				</tr>
+			</table>
+
+			<div class="hr"></div>
+
+			<div class="action-btns">
+				<span class="btn">download system logs</span>
+				<span class="btn">install software</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
